@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/signBg.png") !important;
+    background-repeat: no-repeat  !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-color: #cccccc !important;
+    background-size: cover !important;
+
+ 	background-size: cover !important;
+ 	position:relative !important;
+ 	font-family: 'Open Sans', sans-serif !important; 
+
+}

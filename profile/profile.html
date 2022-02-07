@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malware</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/21e2b5c28b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand" href="#"><img src="../logos/navLog.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Hospital</a>
+            <a class="dropdown-item" href="#"> Doctors/Clinik</a>
+            <a class="dropdown-item" href="#">Drugs</a>
+            <a class="dropdown-item" href="#">Symptoms</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Mobile Hospital</a>
+          </div>
+        </li>
+
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <button style=" color: aliceblue;" onclick="logout()" class="btn btn-outline-success" type="submit"><i
+            class="fas fa-sign-out-alt"></i> Logout</button>
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- -------------------------------------------------------------------------------------- -->
+
+  <div class="container">
+    <h1 style="text-align: center;">User Dashboard</h1>
+    <h3 style="text-align: center;">Profile</h3>
+
+  </div>
+
+
+  <div class="col-12 justify-content-center text-center">
+    <i class="fa fa-camera" data-toggle="modal" data-target="#exampleModal" aria-hidden="true"></i>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit image</h5>
+
+            <button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input id="editProfile" type="file" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button onclick="updateProfile()" type="button" class="btn btn-primary">Save
+              changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center mt-20">
+        <div class="col-6 justify-content-center text-center">
+      
+            <div class="profile-div">
+                <img id="profileImg"
+                    src="https://cdn1.vectorstock.com/i/1000x1000/05/60/man-character-employee-vector-25090560.jpg"
+                    alt="">
+            </div>
+            <div class="mt-20">
+                <h2 id="username"> </h2>
+                <span id="email"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ 
+
+  </div>
+
+
+
+
+  <!-- ========================================================================= -->
+
+  <div class="container-fluid">
+    
+    <h1 class="main-heading" style="font-family: 'Dancing Script', cursive;">Health Tabs</h1>
+
+  </div>
+  <hr class="my-4" style="border: 2px dotted green;">
+
+
+  <div class="container ">
+
+
+
+    <div class="card-group mt-20">
+
+      <div class="card">
+        <img src="../images/dignose.jpg" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Digi Lab</h5>
+          <p class="card-text">Check Your Tuberclusis Here.</p>
+          <a href="http://127.0.0.1:5000/" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/hospital.jfif" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hospital</h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/doctors.jfif" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Doctors</h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+     
+
+    </div>
+    <div class="card-group  mt-20">
+
+      <div class="card">
+        <img src="../images/drug.jfif" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Drugs</h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/reminder.jpg" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Reminder</h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/report.jpg" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Reports</h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="card-group  mt-20">
+
+      <div class="card">
+        <img src="../images/sym.jfif" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Symptoms </h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/diet.jfif" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Diet</h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../images/tb.jfif" class="card-img-top cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tuberclusis</h5>
+          <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- ======================================================================= -->
+
+  <br>
+  <hr>
+  <div class="container-fluid">
+		<div class="">
+			<p id="copy-r" style="color: black; text-align: center;">&copy; 2021. All rights reserved | Design by <a href="#"  style="color: #198dec;"><b>Muddassir_Abdullah_Sharjeel</b></a></p>
+		
+		</div>
+		
+		</div>
+    <!-- ---------------------------------------------------------------------------- -->
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyATdIvyF0tSh6R5_LCRI0j3gfAr8A0Vl6Y",
+      authDomain: "malware-project-31ca3.firebaseapp.com",
+      projectId: "malware-project-31ca3",
+      storageBucket: "malware-project-31ca3.appspot.com",
+      messagingSenderId: "245482171795",
+      appId: "1:245482171795:web:bed604685190b005e48c66",
+      measurementId: "G-S5DWG75RKB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="profile.js"></script>
+</body>
+
+</html>

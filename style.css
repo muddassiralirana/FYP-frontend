@@ -1,0 +1,45 @@
+body{
+    background-image: url("images/bg.png") !important;
+    background-repeat: no-repeat  !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-color: #cccccc !important;
+    background-size: cover !important;
+
+ 	background-size: cover !important;
+ 	position:relative !important;
+ 	font-family: 'Open Sans', sans-serif !important; 
+
+}
+
+
+.im{
+    display: flex !important;
+  justify-content: center !important;
+}
+
+.im h1{
+    text-align: center;
+}
+
+.navbar-brand img{
+    width: auto;
+    height: 50px;
+}
+
+.btnn button a{
+    color: black;
+}
+ #slide{
+     height: 350px;
+     width: 80%;
+ }
+ 
+ #copy-r{
+    text-align: center;
+ }
+
+ .flex-con{
+     display: flex;
+     
+ }

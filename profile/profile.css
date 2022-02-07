@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(201, 235, 215) !important;
+    font-family: Arial, Helvetica, sans-serif!;
+}
+
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.profile-div > img  {
+    border: 4px solid grey;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.spinner-border {
+    height: 20px;
+    width: 20px;
+}
+
+.main-heading{
+    text-align: center;
+    text-decoration: underline;
+}
+.figure{
+    margin-left: 4%;
+}
+.figure-caption{
+    text-align: center;
+    color: black;
+}
+.list0hotel{
+    margin-left: 10%;
+}
+
+
+.im{
+    display: flex !important;
+  justify-content: center !important;
+}
+
+.im h1{
+    text-align: center;
+}
+
+.navbar-brand img{
+    width: auto;
+    height: 50px;
+}
+
+.btnn button a{
+    color: black;
+}
+ #slide{
+     height: 350px;
+     width: 80%;
+ }
+ 
+ #copy-r{
+    text-align: center;
+ }
+
+ .flex-contain{
+     display: flex;
+     justify-content: space-between;
+
+ }
+ 
+
+ .cardImg{
+     height: 200px;
+ }
