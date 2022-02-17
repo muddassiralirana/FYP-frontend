@@ -42,10 +42,10 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Hospital</a>
-            <a class="dropdown-item" href="#"> Doctors/Clinik</a>
-            <a class="dropdown-item" href="#">Drugs</a>
-            <a class="dropdown-item" href="#">Symptoms</a>
+            <a class="dropdown-item" href="../pages/hospital.html">Hospital</a>
+            <a class="dropdown-item" href="../pages/docter.html"> Doctors/Clinik</a>
+            <a class="dropdown-item" href="../pages/drugs.html">Drugs</a>
+            <a class="dropdown-item" href="../pages/symp.html">Symptoms</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Mobile Hospital</a>
           </div>
@@ -70,55 +70,66 @@
 
   </div>
 
-
-  <div class="col-12 justify-content-center text-center">
-    <i class="fa fa-camera" data-toggle="modal" data-target="#exampleModal" aria-hidden="true"></i>
-    <!-- Button trigger modal -->
+  <div class="container dashmain">
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit image</h5>
+    <div>
+      <div class="col-12 justify-content-center text-center">
+        <i class="fa fa-camera" data-toggle="modal" data-target="#exampleModal" aria-hidden="true"></i>
+        <!-- Button trigger modal -->
 
-            <button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <input id="editProfile" type="file" />
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button onclick="updateProfile()" type="button" class="btn btn-primary">Save
-              changes</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit image</h5>
+
+                <button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input id="editProfile" type="file" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button onclick="updateProfile()" type="button" class="btn btn-primary">Save
+                  changes</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="">
+       
+        <div class="profile-div">
+          <img id="profileImg"
+            src="https://cdn1.vectorstock.com/i/1000x1000/05/60/man-character-employee-vector-25090560.jpg" alt="">
+        </div>
+      
+     
+      </div>
+
     </div>
+    <div>
+      <div class="mt-20">
+        <h2>Name : <span  id="username"></span> </h2>
+        <h5 >Email: <span id="email"></span></h5>
+        <h5 >Phone: <span id="phone"></span></h5>
+        <h5 > Gender: <span id="gender"></span></h5>
+    </div>
+    </div>
+
   </div>
 
-  <div class="container">
-    <div class="row justify-content-center mt-20">
-        <div class="col-6 justify-content-center text-center">
-      
-            <div class="profile-div">
-                <img id="profileImg"
-                    src="https://cdn1.vectorstock.com/i/1000x1000/05/60/man-character-employee-vector-25090560.jpg"
-                    alt="">
-            </div>
-            <div class="mt-20">
-                <h2 id="username"> </h2>
-                <span id="email"></span>
-            </div>
-        </div>
-    </div>
-</div>
 
 
- 
+
+
+
 
   </div>
 
@@ -128,7 +139,7 @@
   <!-- ========================================================================= -->
 
   <div class="container-fluid">
-    
+
     <h1 class="main-heading" style="font-family: 'Dancing Script', cursive;">Health Tabs</h1>
 
   </div>
@@ -154,7 +165,7 @@
         <img src="../images/hospital.jfif" class="card-img-top cardImg" alt="...">
         <div class="card-body">
           <h5 class="card-title">Hospital</h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
+          <a href="../pages/hospital.html" class="btn btn-primary">Click Here</a>
         </div>
       </div>
 
@@ -162,11 +173,11 @@
         <img src="../images/doctors.jfif" class="card-img-top cardImg" alt="...">
         <div class="card-body">
           <h5 class="card-title">Doctors</h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
+          <a href="../pages/docter.html" class="btn btn-primary">Click Here</a>
         </div>
       </div>
 
-     
+
 
     </div>
     <div class="card-group  mt-20">
@@ -175,7 +186,7 @@
         <img src="../images/drug.jfif" class="card-img-top cardImg" alt="...">
         <div class="card-body">
           <h5 class="card-title">Drugs</h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
+          <a href="../pages/drugs.html" class="btn btn-primary">Click Here</a>
         </div>
       </div>
 
@@ -183,7 +194,7 @@
         <img src="../images/reminder.jpg" class="card-img-top cardImg" alt="...">
         <div class="card-body">
           <h5 class="card-title">Reminder</h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
+          <a href="../pages/symp.html" class="btn btn-primary">Click Here</a>
         </div>
       </div>
 
@@ -205,7 +216,7 @@
         <img src="../images/sym.jfif" class="card-img-top cardImg" alt="...">
         <div class="card-body">
           <h5 class="card-title">Symptoms </h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
+          <a href="../pages/symp.html" class="btn btn-primary">Click Here</a>
         </div>
       </div>
 
@@ -213,7 +224,7 @@
         <img src="../images/diet.jfif" class="card-img-top cardImg" alt="...">
         <div class="card-body">
           <h5 class="card-title">Diet</h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
+          <a href="../pages/diet.html" class="btn btn-primary">Click Here</a>
         </div>
       </div>
 
@@ -244,13 +255,14 @@
   <br>
   <hr>
   <div class="container-fluid">
-		<div class="">
-			<p id="copy-r" style="color: black; text-align: center;">&copy; 2021. All rights reserved | Design by <a href="#"  style="color: #198dec;"><b>Muddassir_Abdullah_Sharjeel</b></a></p>
-		
-		</div>
-		
-		</div>
-    <!-- ---------------------------------------------------------------------------- -->
+    <div class="">
+      <p id="copy-r" style="color: black; text-align: center;">&copy; 2021. All rights reserved | Design by <a href="#"
+          style="color: #198dec;"><b>Muddassir_Abdullah_Sharjeel</b></a></p>
+
+    </div>
+
+  </div>
+  <!-- ---------------------------------------------------------------------------- -->
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->

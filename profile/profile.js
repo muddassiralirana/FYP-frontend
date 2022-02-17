@@ -1,52 +1,58 @@
-// firebase.auth().onAuthStateChanged((user) => {
-//     if (user) {
-//         var uid = user.uid;
-//         firebase.database().ref(`users/${uid}`).once('value', (data) => {
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        var uid = user.uid;
+        firebase.database().ref(`users/${uid}`).once('value', (data) => {
 
-//             console.log(data)
-//             let username = document.getElementById("username");
-//             let email = document.getElementById("email");
-//             let userprofile = document.getElementById("userprofile");
-//             username.innerHTML = data.val().username;
-//             email.innerHTML = data.val().email
-//             userprofile.setAttribute('src', data.val().profile)
-//             console.log(data.val())
-//         })
-//     } else {
-//         window.location = "../index.html"
-//     }
-// });
+            console.log(data.val())
+            // console.log(data)
+            let username = document.getElementById("username");
+            let email = document.getElementById("email");
+            let gender = document.getElementById("gender");
+            let phone = document.getElementById("phone");
+            let userprofile = document.getElementById("profileImg");
+            username.innerHTML = data.val().username;
+            email.innerHTML = data.val().email
+            gender.innerHTML=data.val().gender
+            phone.innerHTML=data.val().phone
+            userprofile.setAttribute('src', data.val().profile)
+            // userprofile.setAttribute('src', data.val().profile)
+        })
+    } else {
+        window.location = "../index.html"
+    }
+});
 
-let checkAuth = () => {
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-            firebase.database().ref(`user/${user.uid}`).once('value', (data) => {
+// // let checkAuth = () => {
+//     firebase.auth().onAuthStateChanged((user) => {
+//         if (user) {
+//             firebase.database().ref(`user/${user.uid}`).once('value', (data) => {
+//                 console.log(data.val())
 
-                let username = document.getElementById("username");
-                let email = document.getElementById("email");
-                let userprofile = document.getElementById("profileImg");
-                username.innerHTML = data.val().username;
-                email.innerHTML = data.val().email;
-                userprofile.setAttribute('src', data.val().profile)
+//                 let username = document.getElementById("username");
+//                 let email = document.getElementById("email");
+//                 let userprofile = document.getElementById("profileImg");
+//                 username.innerHTML = data.val().username;
+//                 email.innerHTML = data.val().email;
+//                 userprofile.setAttribute('src', data.val().profile)
                 
 
-                // console.log(data.val());
+//                 // console.log(data.val());
 
-                if (data.val()) {
-                } else {
-                    window.location = "../../index.html"
-                }
-            })
-        } else {
-            window.location = "../../index.html"
-        }
-    })
-}
+//                 if (data.val()) {
+//                 } else {
+//                     window.location = "../../index.html"
+//                 }
+//             })
+//         } else {
+//             window.location = "../../index.html"
+//         }
+//     })
+// // }
 
 
 let uploadFiles = (file) => {
     return new Promise((resolve, reject) => {
-        let storageRef = firebase.storage().ref(`myfolder/todayImages/${file.name}`);
+        let storageRef = firebase.storage().ref(`myfolder/profileImages/${file.name}`);
         let uploading = storageRef.put(file)
         uploading.on('state_changed',
             (snapshot) => {
