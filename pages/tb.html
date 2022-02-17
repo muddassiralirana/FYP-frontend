@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../profile/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/21e2b5c28b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/22222.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="../images/signbgg.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../profile/profile.html"><i class="fas fa-home"></i> Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./hospital.html">Hospital</a>
+                        <a class="dropdown-item" href="./docter.html"> Doctors/Clinik</a>
+                        <a class="dropdown-item" href="./drugs.html">Drugs</a>
+                        <a class="dropdown-item" href="./symp.html">Symptoms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mobile Hospital</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button style=" color: black;" onclick="logout()" class="btn btn-outline-light" type="submit"><i
+                        class="fas fa-sign-out-alt"></i> Logout</button>
+                <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <div class="container">
+        <br>
+        <h1 style="text-align: center;"><img class="mainpageIcon" src="../images/tuberculosis.png" alt=""> Tuberculosis
+        </h1>
+        <br>
+
+        <h2>Tuberculosis (TB)</h2>
+
+        <div class="tbscreensection">
+           <div>
+            <ul>
+                <li><a href="#over">Overview</a></li>
+                <li><a href="#symp">Symptoms</a></li>
+                <li><a href="#cause">Causes</a></li>
+                <li><a href="#treating">Treating TB</a></li>
+                <li><a href="#vac">Vaccination for TB</a></li>
+                <li><a href="#high">Countries with high TB rates</a></li>
+                <li><a href="#Diagnosis">Diagnosis</a></li>
+                <li><a href="#Treatment">Treatment</a></li>
+                <li><a href="#side">Side effects of treatment</a></li>
+                <li><a href="#preven">Preventing the spread of infection</a></li>
+            </ul>
+           </div>
+           <img src="../images/32.png" class="imagetb" alt="">
+       </div>
+        <div class="tbscreensection">
+            <img src="../images/34.jpg" alt="">
+            <img src="../images/33.jpg" alt="">
+
+        </div>
+<br>
+        <h3 id="over">Overview</h3>
+        <p>Tuberculosis (TB) is a bacterial infection spread through inhaling tiny droplets from the coughs or sneezes
+            of an infected person. <br><br>
+
+            It mainly affects the lungs, but it can affect any part of the body, including the tummy (abdomen), glands,
+            bones and nervous system.<br><br>
+
+            TB is a potentially serious condition, but it can be cured if it's treated with the right antibiotics.</p>
+        <h3 id="symp">Symptoms of TB</h3>
+        <span>Typical symptoms of TB include:</span>
+        <ul>
+            <li>a persistent cough that lasts more than 3 weeks and usually brings up phlegm, which may be bloody</li>
+            <li> weight loss</li>
+            <li> night sweats</li>
+            <li> high temperature</li>
+            <li> tiredness and fatigue</li>
+            <li> loss of appetite</li>
+            <li> swellings in the neck</li>
+        </ul>
+        <p>You should see a GP if you have a cough that lasts more than 3 weeks or you cough up blood.</p>
+        <h3 id="cause">What causes TB?</h3>
+        <p>
+            TB is a bacterial infection. TB that affects the lungs (pulmonary TB) is the most contagious type, but it
+            usually only spreads after prolonged exposure to someone with the illness. <br><br>
+
+            In most healthy people, the body's natural defence against infection and illness (the immune system) kills
+            the bacteria and there are no symptoms.<br><br>
+
+            Sometimes the immune system cannot kill the bacteria, but manages to prevent it spreading in the
+            body.<br><br>
+
+            You will not have any symptoms, but the bacteria will remain in your body. This is known as latent TB.
+            People with latent TB are not infectious to others.<br><br>
+
+            If the immune system fails to kill or contain the infection, it can spread within the lungs or other parts
+            of the body and symptoms will develop within a few weeks or months. This is known as active TB.<br><br>
+
+            Latent TB could develop into an active TB disease at a later date, particularly if your immune system
+            becomes weakened.
+        </p>
+        <h3 id="treating">Treating TB</h3>
+        <p>With treatment, TB can almost always be cured. A course of antibiotics will usually need to be taken for 6
+            months.<br><br>
+
+            Several different antibiotics are used because some forms of TB are resistant to certain
+            antibiotics.<br><br>
+
+            If you're infected with a drug-resistant form of TB, treatment with 6 or more different medications may be
+            needed.<br><br>
+
+            If you're diagnosed with pulmonary TB, you'll be contagious for about 2 to 3 weeks into your course of
+            treatment.<br><br>
+
+            You will not usually need to be isolated during this time, but it's important to take some basic precautions
+            to stop the infection spreading to your family and friends.
+            <br><br>
+            You should:
+        </p>
+        <ul>
+            <li> stay away from work, school or college until your TB treatment team advises you it's safe to return
+            </li>
+            <li> always cover your mouth when coughing, sneezing or laughing</li>
+            <li> carefully dispose of any used tissues in a sealed plastic bag</li>
+            <li> open windows when possible to ensure a good supply of fresh air in the areas where you spend time</li>
+            <li> avoid sleeping in the same room as other people</li>
+        </ul>
+        <p>If you're in close contact with someone who has TB, you may have tests to see whether you're also infected.
+            These can include a chest X-ray, blood tests, and a skin test called the Mantoux test.</p>
+
+        <h3 id="vac">Vaccination for TB</h3>
+        <p>The BCG vaccine offers protection against TB, and is recommended on the NHS for babies, children and adults
+            under the age of 35 who are considered to be at risk of catching TB.
+            <br><br>
+            The BCG vaccine is not routinely given to anyone over the age of 35 as there's no evidence that it works for
+            people in this age group.
+            <br><br>
+            At-risk groups include:
+        </p>
+        <ul>
+            <li> children living in areas with high rates of TB</li>
+            <li>people with close family members from countries with high TB rates</li>
+            <li>people going to live and work with local people for more than 3 months in an area with high rates of TB
+            </li>
+        </ul>
+        <p>If you're a healthcare worker or NHS employee and you come into contact with patients or clinical specimens,
+            you should also have a TB vaccination, irrespective of age, if:</p>
+
+        <ul>
+            you have not been previously vaccinated (you do not have a BCG scar or the relevant documentation), and
+            <br><br>
+            the results of a Mantoux skin test or a TB interferon gamma release assay (IGRA) blood test are negative
+        </ul>
+
+        <h3 id="high">Countries with high TB rates</h3>
+        <span>Parts of the world with high rates of TB include:</span>
+        <ol>
+            <li> Africa – particularly sub-Saharan Africa (all the African countries south of the Sahara desert) and
+                west
+                Africa</li>
+            <li> south Asia – including India, Pakistan, Indonesia and Bangladesh
+            </li>
+            <li> Russia</li>
+            <li> China</li>
+            <li> South America</li>
+            <li> the western Pacific region (to the west of the Pacific Ocean) – including Vietnam, Cambodia and the
+                Philippines</li>
+        </ol>
+
+        <h3 id="Diagnosis">Diagnosis</h3>
+        <p>Several tests are used to diagnose tuberculosis (TB), depending on the type of TB suspected. <br><br>
+
+            A GP may refer you to a TB specialist for testing and treatment if they think you have TB.</p>
+        <h4>Pulmonary TB</h4>
+        <p>Diagnosing pulmonary TB – TB that affects the lungs – can be difficult, and several tests are usually needed.
+            <br><br>
+
+            You may have a chest X-ray to look for changes in the appearance of your lungs that are suggestive of TB.
+            Samples of phlegm will also often be taken and checked for the presence of TB bacteria.
+            <br><br>
+            These tests are important in helping to decide the most effective treatment for you.
+        </p>
+        <h4>Extrapulmonary TB</h4>
+        <p>Several tests can be used to confirm suspected extrapulmonary TB, which is TB outside the lungs.
+            <br><br>
+            These tests include:
+        </p>
+        <p>a CT scan, MRI scan or ultrasound scan of the affected part of the body <br><br>
+            an examination of the inside of your body using a long, thin, flexible tube with a light and camera at one
+            end (endoscopy) – the endoscope can be inserted through a natural opening, such as your mouth, or through a
+            small cut made in your skin (laparoscopy) if there's a need to check other parts of your body
+            urine and blood tests <br><br>
+            a biopsy – a small sample of tissue or fluid is taken from the affected area and tested for TB bacteria
+            You may also have a lumbar puncture, where a small sample of cerebrospinal fluid (CSF) is taken from the
+            base of your spine. CSF is fluid that surrounds the brain. <br><br>
+
+            The sample can be checked to see whether TB has infected your brain and spinal cord (central nervous
+            system).</p>
+
+        <h4>Testing for latent TB</h4>
+        <p>
+            In some circumstances, you may need to have a test to check for latent TB – where you've been infected with
+            TB bacteria, but do not have any symptoms. <br><br>
+
+            For example, you may need to have a test if you've been in close contact with someone known to have active
+            TB disease involving the lungs, or if you've recently spent time in a country where TB levels are high.
+            <br> <br>
+            If you've just moved to the UK from a country where TB is common, you should be given information and advice
+            about the need for testing. Your GP may suggest having a test when you register as a patient.
+        </p>
+        <h4>Mantoux test </h4>
+
+        <p>The Mantoux test is a widely used test for latent TB. It involves injecting a small amount of a substance
+            called PPD tuberculin into the skin of your forearm. It's also called the tuberculin skin test (TST).
+            <br> <br>
+            If you have a latent TB infection, your skin will be sensitive to PPD tuberculin and a small, hard red bump
+            will develop at the site of the injection, usually within 48 to 72 hours of having the test.
+            <br> <br>
+            If you have a very strong skin reaction, you may need a chest X-ray to confirm whether you have active TB
+            disease.
+            <br> <br>
+            If you do not have a latent infection, your skin will not react to the Mantoux test. However, as TB can take
+            a long time to develop, you may need to be screened again at a later stage.
+            <br> <br>
+            If you've had the BCG vaccination, you may have a mild skin reaction to the Mantoux test. This does not
+            necessarily mean you have latent TB.
+        </p>
+        <h4>Interferon gamma release assay (IGRA)</h4>
+        <p>The interferon gamma release assay (IGRA) is a blood test for TB that's becoming more widely available.
+            <br><br>
+            The IGRA may be used to help diagnose latent TB:
+        </p>
+        <ul>
+            <li> if you have a positive Mantoux test</li>
+            <li> if you previously had the BCG vaccination – the Mantoux test may not be reliable in these cases</li>
+            <li> as part of your TB screening if you've just moved to the UK from a country where TB is common</li>
+            <li> as part of a health check when you register with a GP</li>
+            <li> if you're about to have treatment that will suppress your immune system</li>
+            <li> if you're a healthcare worker</li>
+        </ul>
+        <h3 id="Treatment">Treatment</h3>
+        <p>Treatment for tuberculosis (TB) usually involves taking antibiotics for several months. <br><br>
+
+            While TB is a serious condition that can be fatal if left untreated, deaths are rare if treatment is
+            completed.
+            <br><br>
+            Most people do not need to be admitted to hospital during treatment.
+        </p>
+        <h4>Pulmonary TB</h4>
+        <p>You'll be prescribed at least a 6-month course of a combination of antibiotics if you're diagnosed with
+            active pulmonary TB, where your lungs are affected and you have symptoms.
+
+            The usual treatment is: <br><br>
+
+        <ul>
+            <li> 2 antibiotics (isoniazid and rifampicin) for 6 months </li>
+            <li>2 additional antibiotics (pyrazinamide and ethambutol) for the first 2 months of the 6-month treatment
+                period</li>
+        </ul><br><br>
+        It may be several weeks before you start to feel better. The exact length of time will depend on your
+        overall health and the severity of your TB.
+        <br><br>
+        After taking antibiotics for 2 weeks, most people are no longer infectious and feel better.
+        <br><br>
+        However, it's important to continue taking your medicine exactly as prescribed and to complete the whole
+        course of antibiotics.
+        <br><br>
+        Taking medication for 6 months is the best way to ensure the TB bacteria are killed.
+
+        If you stop taking your antibiotics before you complete the course or you skip a dose, the TB infection may
+        become resistant to the antibiotics.
+        <br><br>
+        This is potentially serious because it can be difficult to treat and will require a longer course of
+        treatment with different, and possibly more toxic, therapies.
+
+        If you find it difficult to take your medicine every day, your treatment team can work with you to find a
+        solution.
+        <br><br>
+        This may include having regular contact with your treatment team at home, at the treatment clinic, or
+        somewhere else that's more convenient.
+
+        If treatment is completed correctly, you should not need any further checks by a TB specialist afterwards.
+        You may be given advice about spotting signs that the illness has returned, although this is rare.</p>
+
+        <h4>Extrapulmonary TB</h4>
+        <p>Extrapulmonary TB – TB that occurs outside the lungs – can be treated using the same combination of
+            antibiotics as those used to treat pulmonary TB.
+            <br><br>
+            If you have TB in areas like your brain or the sac surrounding your heart (pericardium), you may initially
+            be prescribed a corticosteroid such as prednisolone for several weeks to take at the same time as your
+            antibiotics. This will help reduce any swelling in the affected areas.
+            <br><br>
+            As with pulmonary TB, it's important to take your medicines exactly as prescribed and to finish the whole
+            course.
+        </p>
+        <h4>Multidrug-resistant TB</h4>
+        <p>Though uncommon in the UK there are strains of TB that are resistant to 2 or more antibiotics. This is known
+            as multidrug-resistant TB.
+            <br><br>
+            Multidrug-resistant TB requires a much longer course of antibiotics; between 9 to 24 months depending on the
+            strain. Multidrug-resistant TB tends to have less favourable outcomes than standard TB.
+        </p>
+        <h4>Latent TB</h4>
+        <p>Latent TB is where you've been infected with the TB bacteria, but do not have any symptoms of active
+            infection.
+            <br><br>
+            If you have latent TB and are aged 65 or under, treatment is usually recommended. However, the antibiotics
+            used to treat TB can cause liver damage in older adults.
+            <br><br>
+            If liver damage is a concern and you're aged between 35 and 65, your TB team will discuss with you the
+            advantages and disadvantages of taking treatment for latent TB.
+            <br><br>
+            Latent TB is also not always treated if it's thought to be drug resistant. If this is the case, you may be
+            regularly monitored to check the infection does not become active.
+            <br><br>
+            In some cases, testing and treatment for latent TB may be recommended for people who require treatment that
+            will weaken their immune system, such as long-term steroid medicines, chemotherapy or biological inhibitors
+            like TNF inhibitors. This is because there's a risk of the infection becoming active.
+            <br><br>
+            Treatment for latent TB generally involves:
+            <br>
+        <ul>
+            <li> either taking a combination of rifampicin and isoniazid for 3 months
+            </li>
+            <li> or isoniazid on its own for 6 months</li>
+        </ul>
+        </p>
+        <h3 id="side">Side effects of treatment</h3>
+        <p>Isoniazid can cause nerve damage (peripheral neuropathy). You'll be given supplements of vitamin B6
+            (pyridoxine) to take alongside it to reduce this risk. Your liver function will be tested before you start
+            treatment.
+            <br><br>
+            In rare cases, the antibiotics used to treat TB can cause eye damage, which can be serious. If you're going
+            to be treated with ethambutol, your sight should also be tested at the beginning of the course of treatment.
+            <br><br>
+            Contact your TB treatment team if you develop any worrying symptoms during treatment, such as:
+        </p>
+        <ul>
+            <li> being sick </li>
+            <li> yellowing of your skin and the whites of your eyes (jaundice)</li>
+            <li> an unexplained high temperature</li>
+            <li> tingling or numbness in your hands or feet</li>
+            <li> a rash or itchy skin</li>
+            <li> changes to your sight, such as blurred vision</li>
+        </ul>
+        <p>Rifampicin can reduce the effectiveness of some types of contraception, such as the combined contraceptive
+            pill. You should use an alternative method of contraception, such as condoms, while taking rifampicin.
+            <br><br>
+            Rifampicin can also interact with other medication, so it's important that your TB team know about all of
+            the medicine you're taking before you start treatment for TB.
+        </p>
+
+        <h3 id="preven">Preventing the spread of infection</h3>
+<p>If you're diagnosed with pulmonary TB, you'll be contagious up to about 2 to 3 weeks into your course of treatment.
+<br><br>
+    You will not usually need to be isolated during this time, but it's important to take some basic precautions to stop TB spreading to your family and friends.
+    <br><br>
+    You should:</p>
+    <ul>
+<li>         stay away from work, school or college until your TB treatment team advises you it's safe to return </li>
+<li> always cover your mouth – preferably with a disposable tissue – when coughing, sneezing or laughing</li>
+<li> carefully dispose of any used tissues in a sealed plastic bag </li>
+<li> open windows when possible to ensure a good supply of fresh air in the areas where you spend time</li>
+<li> not sleep in the same room as other people – you could cough or sneeze in your sleep without realising it</li>
+    </ul>
+    <h3>What if someone I know has TB?</h3>
+<p>When someone is diagnosed with TB, their treatment team will assess whether other people are at risk of infection.
+<br><br>
+    This may include close contacts, such as people living with the person who has TB, as well as casual contacts, such as work colleagues and social contacts.
+    <br><br>
+    Anyone who's thought to be at risk will be asked to go for testing, and will be given advice and any necessary treatment after their results.</p>
+
+    </div>
+
+
+
+    <!-- ======================================================================= -->
+
+    <br>
+    <hr>
+    <div class="container-fluid">
+        <div class="">
+            <p id="copy-r" style="color: black; text-align: center;">&copy; 2021. All rights reserved | Design by <a
+                    href="#" style="color: #198dec;"><b>Muddassir_Abdullah_Sharjeel</b></a></p>
+
+        </div>
+
+    </div>
+    <!-- ---------------------------------------------------------------------------- -->
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyATdIvyF0tSh6R5_LCRI0j3gfAr8A0Vl6Y",
+            authDomain: "malware-project-31ca3.firebaseapp.com",
+            projectId: "malware-project-31ca3",
+            storageBucket: "malware-project-31ca3.appspot.com",
+            messagingSenderId: "245482171795",
+            appId: "1:245482171795:web:bed604685190b005e48c66",
+            measurementId: "G-S5DWG75RKB"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

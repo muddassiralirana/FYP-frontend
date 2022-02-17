@@ -8,21 +8,22 @@
   <title>Malware</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="../profile/profile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/21e2b5c28b.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
+  <link rel="icon" type="image/x-icon" href="../images/22222.png">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-success">
-    <a class="navbar-brand" href="#"><img src="../logos/navLog.png" alt="logo"></a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../images/signbgg.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,7 +32,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../profile/profile.html"><i class="fas fa-home"></i> Home <span
+              class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">About Us</a>
@@ -42,10 +44,10 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Hospital</a>
-            <a class="dropdown-item" href="#"> Doctors/Clinik</a>
-            <a class="dropdown-item" href="#">Drugs</a>
-            <a class="dropdown-item" href="#">Symptoms</a>
+            <a class="dropdown-item" href="./hospital.html">Hospital</a>
+            <a class="dropdown-item" href="./docter.html"> Doctors/Clinik</a>
+            <a class="dropdown-item" href="./drugs.html">Drugs</a>
+            <a class="dropdown-item" href="./symp.html">Symptoms</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Mobile Hospital</a>
           </div>
@@ -54,17 +56,87 @@
       </ul>
       <div class="form-inline my-2 my-lg-0">
         <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-        <button style=" color: aliceblue;" onclick="logout()" class="btn btn-outline-success" type="submit"><i
+        <button style=" color: black;" onclick="logout()" class="btn btn-outline-light" type="submit"><i
             class="fas fa-sign-out-alt"></i> Logout</button>
-        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
       </div>
     </div>
   </nav>
 
 
   <!-- -------------------------------------------------------------------------------------- -->
+  <div class="container">
+    <br>
+    <h1 style="text-align: center;"><img class="mainpageIcon" src="../images/symptom.png" alt=""> symptoms</h1>
 
- 
+    <br>
+    <div class="tbscreensection">
+      <img src="../images/11.jpg" alt="">
+      <img src="../images/12.jpg" alt="">
+
+    </div>
+    <br>
+
+    <h2>What Are the Symptoms of TB?</h2>
+    <p>A person with latent, or inactive, TB will have no symptoms. You may still have a TB infection, but the bacteria
+      in your body is not yet causing harm.</p>
+    <span>Symptoms of active TB include:</span>
+    <ul>
+      <li>A cough that lasts more than three weeks</li>
+      <li>Loss of appetite and unintentional weight loss</li>
+      <li>Fever</li>
+      <li>Chills</li>
+      <li>Night sweats</li>
+
+    </ul>
+    <p>You may experience other symptoms related to the function of a specific organ or system that is affected.
+      Coughing up blood or mucus (sputum) is a sign of in TB of the lungs. Bone pain may mean that the bacteria have
+      invaded your bones.
+
+      These symptoms can also occur with other diseases, so it is important to see a healthcare provider and to let them
+      find out if you have TB. If you think you have been exposed to TB, get a TB test.</p>
+    <h3>How Is TB Diagnosed?</h3>
+    <p>Your doctor will start by collecting a patient history to determine if you may have been exposed. During a
+      physical exam, they will use a stethoscope to listen to your lungs and check the lymph nodes in your neck for
+      swelling.</p>
+    <p>If your doctor suspects TB, they may order a skin or blood test</p>
+    <p>The skin test is done by injecting a small amount of fluid called tuberculin into the skin in the arm. You will
+      be told to return to the office within 48 to 72 hours to have a healthcare worker check the arm to see if a bump
+      or an induration (thickening) of the skin has developed. It may be difficult to feel so an experienced healthcare
+      worker should examine the reaction. The healthcare worker will measure the bump or induration and tell you if your
+      reaction to the test is positive or negative. If it's positive, it usually means you have been infected with the
+      TB germ. It does not tell whether you have developed clinically active TB disease. The skin test isn’t 100%
+      accurate, meaning you may have a false-positive or a false-negative, so your doctor may order further testing
+      regardless of the result.</p>
+    <p>The TB blood test measures how your immune system reacts to the germs that cause TB. This information will be
+      used to more precisely confirm or rule out latent or active TB. It requires only one office visit.</p>
+    <p>If the skin or blood tests indicate the need for further analysis, your doctor may order a chest X-ray or CT scan
+      to look for visible signs of TB in your lungs. They may also check your sputum (coughed-up mucus) for bacteria, to
+      see whether you have clinically active TB disease and if so, which strain of TB you have. These tests can take one
+      to two months before results are available.</p>
+    <h3>Overview</h3>
+    <p>Tuberculosis (TB) is a potentially serious infectious disease that mainly affects the lungs. The bacteria that
+      cause tuberculosis are spread from person to person through tiny droplets released into the air via coughs and
+      sneezes. <br> <br>
+
+      Once rare in developed countries, tuberculosis infections began increasing in 1985, partly because of the
+      emergence of HIV, the virus that causes AIDS. HIV weakens a person's immune system, so it can't fight the TB
+      germs. In the United States, because of stronger control programs, tuberculosis began to decrease again in 1993.
+      But it remains a concern. <br><br>
+
+      Many tuberculosis strains resist the drugs most used to treat the disease. People with active tuberculosis must
+      take many types of medications for months to get rid of the infection and prevent antibiotic resistance.</p>
+
+
+
+
+
+
+
+  </div>
+
+
+
   <!-- ======================================================================= -->
 
   <br>

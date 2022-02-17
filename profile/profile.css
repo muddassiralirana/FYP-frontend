@@ -1,6 +1,10 @@
 body{
-    background-color: rgb(141, 201, 166) !important;
+    /* background-color: rgb(141, 201, 166) !important; */
     font-family: Arial, Helvetica, sans-serif!;
+    /* background-image: url(../images/bgbg.jpg); */
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    background-size: cover;
 }
 
 
@@ -96,4 +100,21 @@ body{
  .mainpageIcon{
      width: 50px;
      height: 50px;
+ }
+ p{
+     text-align: justify;
+ }
+ .tbscreensection{
+     display: flex;
+     justify-content: space-evenly;
+ }
+ .tbscreensection > img{
+     width: 600px;
+     height: 450px;
+ }
+ .imagetb{
+     height: 250px !important;
+     width: 300px !important;
+     margin-bottom: 20px !important;
+     margin-top: -20px !important;
  }
