@@ -1,10 +1,10 @@
 body{
-    background-image: url("images/bg.png") !important;
+    background-image: url("images/bg.jpg") !important;
     background-repeat: no-repeat  !important;
     background-attachment: fixed !important;
     background-position: center !important;
     background-color: #cccccc !important;
-    background-size: cover !important;
+    /* background-size: cover !important; */
 
  	background-size: cover !important;
  	position:relative !important;

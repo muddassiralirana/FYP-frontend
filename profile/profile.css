@@ -103,6 +103,7 @@ body{
  }
  p{
      text-align: justify;
+     font-size: large;
  }
  .tbscreensection{
      display: flex;
@@ -117,4 +118,25 @@ body{
      width: 300px !important;
      margin-bottom: 20px !important;
      margin-top: -20px !important;
+ }
+ .emergencyImage{
+     height: 200px;
+     width: 300px;
+     margin-top: 10px;
+ }
+ .sec{
+     border: 1px dotted black;
+     padding: 5px;
+ }
+
+ .cc{
+     text-align: center;
+    
+ }
+
+ .imgcard{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: 45%;
  }
